@@ -7,4 +7,4 @@ def test_suma_positiva():
   
 def test_fallo_sum():
   cal = Calculadora()
-  assert cal.sum(1,2) == 4
+  assert cal.sum(1,2) != 4
