@@ -38,7 +38,7 @@ jobs:
         
     - name: Ejecutar Testing
       run: |
-        python -m pytest -v --cov=. --cov-report=html
+        python -m pytest -v --cov=. --cov-report=html --html=report.html
 
     - name: Build Clase
       run: |
@@ -48,7 +48,12 @@ jobs:
     - name: Build Reporte
       run: |
         cp -r htmlcov build/
-      
+    
+    - name: Build Reporte
+      run: |
+        cp -r assets build/
+        cp -r report.html build/
+
     - name: Build Artefacto ZIP
       uses: actions/upload-artifact@v4
       with:
