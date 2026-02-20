@@ -47,7 +47,7 @@ jobs:
 
     - name: Build Reporte
       run: |
-        mv -r htmlcov build
+        cp -r htmlcov build/
       
     - name: Build Artefacto ZIP
       uses: actions/upload-artifact@v4
