@@ -4,3 +4,6 @@ class Calculadora:
   
   def mul(self, a, b):
     return a * b
+  
+  def res(self, a, b):
+    return a - b
