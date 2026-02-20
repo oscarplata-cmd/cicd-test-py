@@ -38,4 +38,4 @@ jobs:
         
     - name: Ejecutar Testing
       run: |
-        pytest
+        python -m pytest -v --cov=. --cov-report=html
